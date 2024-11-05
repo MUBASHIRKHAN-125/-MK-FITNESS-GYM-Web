@@ -1,0 +1,150 @@
+.body{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image:url(images/6.jpg);
+  height: 100vh;
+  margin: 0px;
+  padding: 0px;
+}
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 13px;
+  padding-right: 13px;
+}
+ .logo  img{
+  width: 150px;
+  margin: 0px;
+  padding: 0px;
+}
+.logo div{
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+  font-size: 12px;
+  opacity: 10;
+}
+.logo div:hover{
+  color: black;
+}
+.logo:hover{
+transform: scale(1.2);
+background-color: lightgreen;
+
+}
+  nav ul{
+    display: flex;
+ list-style: none;
+ /* column-gap: 10px; */
+ justify-content: center;
+
+ 
+  }
+  nav ul li a{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background-color: black;
+    text-decoration: none;
+    font-size: 22px;
+    transition: all;
+    transition-duration: 0.3s;
+    transition-delay: 0.1s;
+    transition-timing-function: ease-in-out;
+  }
+  nav a:hover{
+    transform: scale(1.2);
+    background-color: white;
+    color: red;
+  }
+.search input{
+  padding:6px 12px ;
+  border-radius: 8px;
+background-color:rgb(164 221 208);
+color: black;
+  }
+  .search input:hover{
+    box-shadow: 1px 10px 10px lightseagreen;
+  }
+
+
+  .button button{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    padding: 10px 80px;
+    font-size: 16px;
+    border-radius: 15px;
+   background: transparent;
+    color: rgb(240, 90, 90);
+    transition-duration: 0.3s;
+    transition-delay: 0.1s;
+    transition-timing-function: ease-in-out;
+  }
+  .button button:hover{
+    box-shadow: 1px 10px 10px gray;
+    transform: scale(1.2);
+  }
+  .welcome .sec-wel{
+    height: 100%;
+    padding-top: 40px;
+    display: flex; 
+    flex-direction: column; 
+  justify-content: space-between;
+  }
+.welcome .sec-wel h1,p{
+  font-family: Arial, Helvetica, sans-serif;
+color: white;
+}
+p{
+ 
+  font-size: 25px;
+  display: flex; 
+   justify-content: center;
+   font-size:14px; 
+}
+h1{
+  /* margin: 0px; */
+  /* padding: 0px; */
+  font-size: 40px;
+  display: flex; 
+ justify-content: center; 
+}
+
+.welcome .sec-wel h1:hover{
+  color: blueviolet;
+}
+.welcome .sec-wel p:hover{
+  color: blueviolet;
+}
+.button{
+  display: flex; 
+  justify-content: center;
+  padding-top: 350px;
+}
+/* FORM */
+    .head{
+      text-align: center;
+      font-size: 25px;
+      text-decoration: underline;
+      color: blueviolet;
+    }
+    legend{
+      text-align: center;
+      font-size: 22px;
+      color: brown;
+    }
+    a{
+      list-style: none;
+      text-decoration: none;
+      font-size: 30px;
+      background-color: lemonchiffon;
+      border-radius: 8px;
+      padding: 5px 30px;
+    }
+    body{
+      background-color: #eb8787;
+    }
+  
+ 
