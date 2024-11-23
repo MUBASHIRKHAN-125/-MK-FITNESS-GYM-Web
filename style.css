@@ -58,7 +58,6 @@ nav ul {
   justify-content: center;
   column-gap: 65px;
 }
-
 nav ul li a {
   font-family: Arial, Helvetica, sans-serif;
   color: white;
@@ -264,7 +263,16 @@ h2 {
 }
 .list {
   display: flex;
- 
+margin-left: 40px;
+margin-top: 25px;
+  width: 300px;
+  height: 250px;
+  border-radius: 30px;
+  background-color: red;
+}
+.list .items2{
+  padding-top: 18px;
+  padding-left: 40px;
 }
 .list ul {
   display: flex;
@@ -278,7 +286,7 @@ h2 {
   text-decoration: underline;
   text-decoration-color: black;
   color: red;
-  padding: 0px 65px;
+ width: 40px;
   font-size: 20px;
 }
 
@@ -287,7 +295,7 @@ h2 {
 }
 
 .para2 {
-  padding-top: 60px;
+  padding-top: 30px;
 }
 
 .gymbody {
@@ -427,6 +435,25 @@ ol {
   padding-top: 140px;
   display: flex;
 }
+.last  .sub input{
+background: transparent;
+transition-property: all;
+transition-duration: 0.3s;
+transition-delay: 0.1s;
+transition-timing-function: ease-in-out;
+border-radius: 8px;
+width: 183px;
+height: 25px;
+color:#4c1e10;
+font-weight: bold;
+font-size: 15px;
+}
+.last  .sub input:hover{
+  box-shadow: 1px 10px 10px black;
+}
+.last input{
+border-radius: 8px;
+}
 
 .items {
   border-radius: 8px;
@@ -435,40 +462,15 @@ ol {
   font-family: Arial, Helvetica, sans-serif;
   padding: 5px 12px;
   color: rgb(189, 180, 52);
-  animation: MKanimation 2.5s ease-in-out 0.1s infinite  alternate both ;
+  animation: MKanimation 3s ease-in-out 0.1s infinite  alternate both ;
   /* animation: name duration timing-function delay iteration-count direction fill-mode; */
 }
-
 @keyframes MKanimation {
-  /* 0% {
-    transform: translate(0px,0px);
-    background-color: red;
-  }
-
-  25% {
-    transform: translate(80px,0px);
-    background-color: yellow;
-  }
-
-  50% {
-    transform: translate(100px,0px);
-    background-color: green;
-  }
-
-  75% {
-    transform: translate(150px,0px);
-    background-color: pink;
-  }
-
-  100% {
-    transform: translate(220px,0px);
-    background-color: rgb(34, 60, 178);
-  } */
     from{
-    transform: translate(250px,0px);
-    background-color: blue;
-   }
-   to{
-    background-color: green;
+      background-color: blue;
+    }
+    to{
+      background-color: green;
+      transform: translate(250px,0px);
    } 
 }
