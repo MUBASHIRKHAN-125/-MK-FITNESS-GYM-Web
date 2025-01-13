@@ -1,24 +1,30 @@
-.body {
-  background-position: center;
-  background-attachment: fixed;
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+  background-image:url("images/img1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url(images/6.jpg);
-  height: 100vh;
-  margin: 0px;
-  padding: 0px;
+  background-attachment: fixed;
+  background-position: center;
 }
-
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-left: 13px;
-  padding-right: 13px;
 }
-
+.logo{
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
 .logo img {
-  width: 150px;
+  width: 135px;
+  height: 120px;
+  border-radius:100%;
   transition-property: all;
   transition-duration: 0.2s;
   transition-delay: 0.1s;
@@ -26,95 +32,67 @@ header {
 }
 
 .logo div {
-  font-family: Arial, Helvetica, sans-serif;
   color: white;
-  margin: 0px;
-  padding: 0px;
+  text-decoration: underline;
+  text-decoration-color: orangered;
   text-align: center;
-  font-size: 12px;
+  font-size: 16px;
   opacity: 10;
-  transition-property: all;
-  transition-duration: 0.2s;
-  transition-delay: 0.1s;
-  transition-timing-function: ease-in-out;
 }
-
-.logo div:hover {
-  color: black;
-  transform: scale(1.2);
-  background-color: white;
-  border-radius: 8px;
-}
-
-.logo img:hover {
-  transform: scale(1.2);
-  background-color: lightgreen;
-
-}
-
 nav ul {
   display: flex;
   list-style: none;
-  justify-content: center;
-  column-gap: 65px;
+  column-gap: 50px;
 }
 nav ul li a {
-  font-family: Arial, Helvetica, sans-serif;
-  color: white;
+  color: rgb(255, 196, 1);
   text-decoration: none;
-  background-color: black;
-  font-size: 22px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+nav ul li{
   transition: all;
   transition-duration: 0.3s;
   transition-delay: 0.1s;
   transition-timing-function: ease-in-out;
 }
-
 nav li:hover {
-  transform: scale(1.2);
+  transform: scale(1.098);
 }
-
-nav a:hover {
-  background-color: white;
-  color: red;
+nav a:hover , .home a {
+  color: rgb(223, 91, 4);
   text-decoration: underline;
-  text-decoration-color: red;
+  text-decoration-color: rgba(232, 235, 240 ,0.88);
   border-radius: 3px;
 }
+.search{
+  margin-right: 10px;
+}
 .search input {
-  max-width: 400px;
   padding:7px; 
-  font-size: 16px;
-  border: 2px solid #ccc; 
-  border-radius: 8px;
+  font-size: 12px;
+  border:none; 
+  border-radius: 8px; 
 }
 .search input::placeholder{
-  color: #aaa; 
+  color: #c90707; 
   font-style: italic; 
+  text-align: center;
 }
-.search input:hover {
-  box-shadow: 1px 8px 10px gray;
-}
-
-section .sec1 {
+.maincontainer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 80px;
+  padding-top: 60px;
+  row-gap: 180px;
 }
-
-.button {
-  padding-top: 250px;
-}
-
 .button button {
-  font-family: Arial, Helvetica, sans-serif;
   font-weight: 700;
   padding: 10px 80px;
   font-size: 16px;
   border-radius: 15px;
   background: transparent;
-  cursor:grab;
+  cursor: pointer;
   color: rgb(240, 90, 90);
   transition-duration: 0.3s;
   transition-delay: 0.1s;
@@ -122,38 +100,36 @@ section .sec1 {
 }
 
 .button button:hover {
-  box-shadow: 1px 10px 10px gray;
-  transform: scale(1.2);
+  box-shadow: 1px 1px 10px rgb(155, 153, 152);
+  transform: scale(1.089);
 }
-
-section .sec-wel h1,
-p {
-  font-family: Arial, Helvetica, sans-serif;
+.sec-wel{
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+.sec-wel h1 {
   color: white;
+  font-size: 2.5rem;
+  text-align: center;
 }
 
 p {
   text-align: center;
-  font-size: 25px;
-  font-size: 14px;
+  font-size: 30px;
   word-spacing: 5px;
-  line-height: 20px;
+  line-height: 26px;
 }
-
-h1 {
-  font-size: 40px;
-}
-
-section .sec-wel h1:hover {
-  color: blueviolet;
+.containername {
+ padding-top: 250px;
+ margin-left: 10px;
+} 
+.items Big{
+  color: white;
   text-decoration: underline;
-  text-decoration-color: purple;
+  text-decoration-color: orangered;
+  text-decoration-thickness: 3px;
 }
-
-section .para p:hover {
-  color: blueviolet;
-}
-
 /* FORM */
 .head3 h2 {
   text-align: center;
@@ -188,7 +164,7 @@ input {
 }
 
 body {
-  background-color: skyblue;
+  /* background-color: skyblue; */
 }
 
 .aboutbody {
@@ -222,7 +198,6 @@ body {
   font-size: 25px;
   line-height: 31px;
   font-size: 19px;
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 .back {
@@ -247,13 +222,11 @@ body {
   text-decoration-color: black;
   color: red;
   text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
   border-radius: 8px;
 }
 
 p {
   color: white;
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 15px;
 }
 
@@ -261,7 +234,6 @@ h2 {
   text-decoration: underline;
   text-decoration-color: blueviolet;
   color: #bfc500;
-  font-family: Arial, Helvetica, sans-serif;
   text-align: center;
   font-size: 30px;
 }
@@ -312,7 +284,6 @@ margin-top: 25px;
   text-decoration-color: black;
   color: red;
   text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
   border-radius: 8px;
 }
 
@@ -322,7 +293,6 @@ margin-top: 25px;
 
 .paratext p {
   color: white;
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
 }
 
@@ -336,7 +306,6 @@ ol li span {
 
 ol li {
   color: white;
-  font-family: Arial, Helvetica, sans-serif;
   word-spacing: 4px;
 }
 
@@ -434,11 +403,11 @@ ol {
   height: 22px;
 }
 
-.containername {
+/* .containername {
   padding-left: 12px;
   padding-top: 140px;
   display: flex;
-}
+} */
 .last  .sub input{
 background: transparent;
 transition-property: all;
@@ -457,25 +426,4 @@ font-size: 15px;
 }
 .last input{
 border-radius: 8px;
-}
-
-.items {
-  border-radius: 8px;
-  border: 1px solid white;
-  color: white;
-  font-family: Arial, Helvetica, sans-serif;
-  padding: 5px 12px;
-  color: rgb(189, 180, 52);
-  cursor: not-allowed;
-  animation: MKanimation 3s ease-in-out 0.1s infinite  alternate both ;
-  /* animation: name duration timing-function delay iteration-count direction fill-mode; */
-}
-@keyframes MKanimation {
-    from{
-      background-color: blue;
-    }
-    to{
-      background-color: green;
-      transform: translate(250px,0px);
-   } 
 }
