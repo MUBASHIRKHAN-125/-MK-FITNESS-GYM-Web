@@ -1,0 +1,29 @@
+*{
+    margin: 0px;
+    padding: 0px;
+  box-sizing: border-box;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    column-gap: 25px;
+}
+li a{
+    text-decoration: none;
+    font-size: 1.32rem;
+}
+.iconabout{
+    margin-right: 20px;
+    display: flex;
+  column-gap: 20px;
+}
