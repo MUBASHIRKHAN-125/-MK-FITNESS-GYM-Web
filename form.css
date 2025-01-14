@@ -1,0 +1,100 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-image: url("images/bc6.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: sans-serif;
+}
+.head1{
+margin-top: 20px;
+}
+ .head1 h1{
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: rgb(119, 103, 103);
+    color: rgb(211, 84, 0);
+  }
+  legend {
+    text-align: center;
+    font-size: 1.32rem;
+    color: rgb(194, 10, 10);
+  }
+  form{
+    display: flex;
+    margin-top: 40px;
+  }
+  fieldset{
+    border: 6px solid rgb(80, 60, 67);
+    padding: 40px;
+  }
+.containerinp{
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+.mainbut{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.reset input:hover,.sub input:hover{
+    cursor: pointer;
+    background-color: #aa0000;
+    color: rgb(255, 252, 252);
+    transform: scale(1.055);
+}
+.reset input ,.sub input{
+    padding: 8px 24px;
+    border-radius: 10px;
+    border: none;
+ background-color:white;
+    color: rgb(250, 71, 0);
+    font-size: 1.088rem;
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-delay: 0.1s;
+    transition-timing-function: ease-in-out
+}
+label input{
+    padding: 6px 25px;
+    border-radius: 8px;
+    border: none;
+}
+label{
+    color: rgb(15, 3, 61);
+    font-weight: bold;
+    font-size: 1.099rem;
+}
+input::placeholder{
+    font-style: italic;
+}
+#NAME{
+margin-left: 70px;
+}
+#num{
+    margin-left: 37px;
+}
+#email{
+    margin-left: 64px;
+}
+#date{
+    margin-left: 100px;
+}
+#gender{
+    margin-left: 50px;
+}
+#full{
+margin-left: 20px;
+}
+#time{
+    padding: 6px 15px;
+    border-radius: 8px;
+    border: none;
+}
+  
