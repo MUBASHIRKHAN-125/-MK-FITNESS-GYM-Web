@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Aldrich&family=Alegreya:ital,wght@0,400..900;1,400..900&family=Boldonse&family=Bowlby+One+SC&family=Cookie&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Dancing+Script:wght@400..700&family=DynaPuff:wght@400..700&family=Gabarito:wght@400..900&family=Inconsolata:wght@200..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Leckerli+One&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Notable&family=Noticia+Text:ital,wght@0,400;0,700;1,400;1,700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Oswald:wght@200..700&family=Paprika&family=Playwrite+IN:wght@100..400&family=Poly:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Sigmar+One&family=Sriracha&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Uchen&display=swap');
 *{
   padding: 0px;
   margin: 0px;
@@ -5,26 +6,18 @@
 }
 body {
   font-family: sans-serif;
-  background:url("images/manhome1.jpg") center / cover no-repeat fixed ;
 }
-/* header::before{
-  content: "";
-  position: absolute;
-  background:url("images/manhome1.jpg") center / cover no-repeat fixed ;
-  inset: 0;
-  z-index: -1;
-} */
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 0px;
+  padding: 40px 0px;
+  position: relative;
 }
 .logo img {
   width: 150px;
   padding-left: 15px;
 }
-
 nav ul {
   display: flex;
   list-style: none;
@@ -71,13 +64,23 @@ background-color: white;
 color: rgb(255, 38, 0);
 
 }
+.sec1{
+  min-height: 70vh;
+  overflow: hidden;
+}
+.sec1::before{
+  content: "";
+  position: absolute;
+  inset:0;
+  z-index: -1;
+  background:url("images/manhome1.jpg") center / cover no-repeat fixed;
+}
 .maincontainer {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding-top: 60px;
-  row-gap: 120px;
-  /* padding:130px 0px; */
+  align-items: flex-end;
+  padding:120px 200px 0px 0px;
+  row-gap: 64px;
 }
 .button button {
   font-weight:600;
@@ -89,38 +92,110 @@ color: rgb(255, 38, 0);
   color: rgb(240, 78, 3);
   transition: all 0.3s 0.1s ease-in-out;
 }
-
+.button{
+  padding-right: 30px;
+}
 .button button:hover {
   box-shadow: 1px 1px 10px rgb(155, 153, 152);
   transform: scale(1.039);
 }
-.sec-wel{
-  display: flex;
-  flex-direction: column;
-  row-gap: 30px;
+.textcontainer > h1 > strong{
+  color: #f36100;
 }
-.sec-wel h1 {
+.textcontainer > h1{
   color: white;
-  font-size: 2.5rem;
-  text-align: center;
-}
-.sec-wel h1 span{
-  color: orangered;
+  font-size: 50px;
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
 }
 p {
-  text-align: center;
-  font-size: 15px;
+  font-size: 18px;
   word-spacing: 5px;
   line-height: 26px;
   color: white;
 }
-.containername {
- padding-top: 250px;
- margin-left: 10px;
-} 
-.items Big{
-  color: white;
-  text-decoration: underline;
-  text-decoration-color: orangered;
-  text-decoration-thickness: 3px;
+.sec2{
+  background-color: #160402;
+  padding: 50px 0px 80px 0px ;
+}
+#icon{
+font-size: 30px;
+width: 80px;
+height: 80px;
+border-radius: 50%;
+background: rgba(255, 255, 255, 0.1);
+color: #f36100;
+display: flex;
+justify-content: center;
+align-items: center;
+transition: all 0.3s 0.1s linear;
+}
+#icon:hover{
+  background: #f36100;
+  color: #ffffff;
+  }
+.cardcontainer{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.items{
+  width: 18%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.items > h4{
+   color: #ffffff;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: "Oswald", sans-serif;
+    padding-top: 15px;
+}
+.items > p{
+  padding-top: 15px;
+  font-size: 12px;
+  font-family: "Mulish", sans-serif;
+  color: #a9a9a9;
+  font-weight: 400;
+  line-height: 20px;
+  word-spacing: 0px;
+  text-align: center;
+}
+.textxontainer >h2{
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Mulish", sans-serif;
+  padding-bottom: 40px;
+}
+.textxontainer >p{
+  font-size: 14px;
+  color: #f36100;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+  font-family: "Mulish", sans-serif;
+  padding-bottom: 10px;
+}
+@media (max-width:1024px) {
+  .maincontainer {
+    row-gap: 55px;
+    padding-top: 30px;
+  }
+}
+@media (max-width:768px) {
+header{
+flex-direction: column;
+row-gap: 20px
+}
+.logo img {
+  width: 210px;
+}
+ .iconall i{
+  display: none;
+}
 }
