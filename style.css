@@ -1,64 +1,76 @@
 @import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Aldrich&family=Alegreya:ital,wght@0,400..900;1,400..900&family=Boldonse&family=Bowlby+One+SC&family=Cookie&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Dancing+Script:wght@400..700&family=DynaPuff:wght@400..700&family=Gabarito:wght@400..900&family=Inconsolata:wght@200..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Leckerli+One&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Notable&family=Noticia+Text:ital,wght@0,400;0,700;1,400;1,700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Oswald:wght@200..700&family=Paprika&family=Playwrite+IN:wght@100..400&family=Poly:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Sigmar+One&family=Sriracha&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Uchen&display=swap');
-*{
+
+* {
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
 }
+
 body {
   font-family: sans-serif;
 }
-header::before{
+
+header::before {
   content: "";
-  position: absolute; 
-background-color: black;
+  position: absolute;
+  inset: 0;
   width: 100%;
   height: 100%;
+  background: url("images/manhome1.jpg") center / cover no-repeat fixed;
   z-index: -1;
-  opacity: 0.4; 
 }
+
 header {
-  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 30px 0px;
 }
+
 .logo img {
   width: 150px;
   padding-left: 15px;
 }
+
 nav ul {
   display: flex;
   list-style: none;
   column-gap: 50px;
 }
+
 nav ul li a {
   color: rgb(255, 196, 1);
   text-decoration: none;
-  font-size:1.1rem;
+  font-size: 1.1rem;
   border-bottom: 2px solid transparent;
   padding-bottom: 4px;
   transition: all 0.3s 0.1s linear;
 }
-nav ul li{
-transition: all 0.3s 0.1s ease-in-out;
+
+nav ul li {
+  transition: all 0.3s 0.1s ease-in-out;
 }
+
 nav li:hover {
   transform: scale(1.038);
 }
-nav a:hover , .home a {
+
+nav a:hover,
+.home a {
   color: rgb(223, 91, 4);
   border-bottom: 2px solid white;
 }
-.iconall{
+
+.iconall {
   margin-right: 20px;
   display: flex;
   column-gap: 6px;
 }
-.iconall i{
+
+.iconall i {
   font-size: 1.1rem;
   color: rgb(235, 135, 5);
-  border-radius: 50%;  
+  border-radius: 50%;
   width: 25px;
   height: 25px;
   display: flex;
@@ -66,35 +78,33 @@ nav a:hover , .home a {
   align-items: center;
   transition: all 0.3s 0.1s ease-in-out;
 }
-.iconall i:hover{
-transform: scale(1.103);
-cursor: pointer;
-background-color: white;
-color: rgb(255, 38, 0);
+
+.iconall i:hover {
+  transform: scale(1.103);
+  cursor: pointer;
+  background-color: white;
+  color: rgb(255, 38, 0);
 
 }
-.sec1{
-  height: 70vh;
+
+.sec1 {
+  min-height: 74vh;
+  display: flex;
 }
-.sec1::before{
-  content: "";
-  position: absolute;
-  inset:0;
-  z-index: -2;
-  width: 100%;
-  height: 100%;
-  background:url("images/manhome1.jpg") center / cover no-repeat fixed;
-}
+
 .maincontainer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
-  padding:150px 200px 0px 0px;
   row-gap: 64px;
+  width: 100%;
+  flex: 1;
+  padding: 0px 80px 0px 0px;
 }
+
 .button button {
-  font-weight:600;
+  font-weight: 600;
   padding: 10px 80px;
   font-size: 20px;
   border-radius: 15px;
@@ -103,68 +113,80 @@ color: rgb(255, 38, 0);
   color: rgb(240, 78, 3);
   transition: all 0.3s 0.1s ease-in-out;
 }
-.button{
+
+.button {
   padding-right: 30px;
 }
+
 .button button:hover {
   box-shadow: 1px 1px 10px rgb(155, 153, 152);
   transform: scale(1.039);
 }
-.textcontainer > h1 > strong{
+
+.textcontainer>h1>strong {
   color: #f36100;
 }
-.textcontainer > h1{
+
+.textcontainer>h1 {
   color: white;
   font-size: 50px;
   text-transform: uppercase;
   font-family: "Oswald", sans-serif;
 }
+
 p {
   font-size: 18px;
   word-spacing: 5px;
   line-height: 26px;
   color: white;
 }
-.sec2{
+
+.sec2 {
   background-color: #160402;
-  padding: 50px 0px 80px 0px ;
+  padding: 50px 0px 80px 0px;
 }
-#icon{
-font-size: 30px;
-width: 80px;
-height: 80px;
-border-radius: 50%;
-background: rgba(255, 255, 255, 0.1);
-color: #f36100;
-display: flex;
-justify-content: center;
-align-items: center;
-transition: all 0.3s 0.1s linear;
+
+#icon {
+  font-size: 30px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  color: #f36100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s 0.1s linear;
 }
-#icon:hover{
+
+#icon:hover {
   background: #f36100;
   color: #ffffff;
-  }
-.cardcontainer{
+}
+
+.cardcontainer {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-.items{
+
+.items {
   width: 18%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-.items > h4{
-   color: #ffffff;
-    font-size: 18px;
-    font-weight: 600;
-    font-family: "Oswald", sans-serif;
-    padding-top: 15px;
+
+.items>h4 {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "Oswald", sans-serif;
+  padding-top: 15px;
 }
-.items > p{
+
+.items>p {
   padding-top: 15px;
   font-size: 12px;
   font-family: "Mulish", sans-serif;
@@ -174,16 +196,18 @@ transition: all 0.3s 0.1s linear;
   word-spacing: 0px;
   text-align: center;
 }
-.textxontainer >h2{
+
+.textxontainer>h2 {
   color: #ffffff;
   font-size: 18px;
   font-weight: 600;
   text-transform: uppercase;
   text-align: center;
   font-family: "Mulish", sans-serif;
-  padding-bottom: 40px;
+  padding-bottom: 55px;
 }
-.textxontainer >p{
+
+.textxontainer>p {
   font-size: 14px;
   color: #f36100;
   text-transform: uppercase;
@@ -192,18 +216,77 @@ transition: all 0.3s 0.1s linear;
   font-family: "Mulish", sans-serif;
   padding-bottom: 10px;
 }
-@media (max-width:768px) {
-  header{
-  flex-direction: column;
-  row-gap: 20px
+
+@media (max-width: 1024px) {
+  header::before {
+    background-attachment: scroll;
   }
-  header::before{
+
+  .cardcontainer {
+    align-items: baseline;
+  }
+
+  .items>h4 {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .items>h4 {
+    font-size: 13px;
+  }
+
+  .items {
+    width: 23%;
+  }
+
+  header {
+    flex-direction: column;
+    row-gap: 26px;
+  }
+
+  .iconall i {
     display: none;
   }
+
+  nav a:hover,
+  .home a {
+    color: rgb(223, 91, 4);
+    border-bottom: 2px solid white;
+  }
+
+  nav ul li a {
+    font-weight: bold;
+  }
+
   .logo img {
-    width: 210px;
+    width: 185px;
   }
-   .iconall i{
-    display: none;
+}
+
+@media (max-width: 430px) {
+  nav ul {
+    column-gap: 19px;
   }
-  } 
+  .cardcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center !important;
+    flex-direction: column;
+    row-gap: 50px;
+}
+    .items{
+      width: 100% !important;
+    }
+    .items>h4 {
+      font-size: 22px;
+  }
+  .items>p {
+  width: 67%;
+  font-size: 15px;
+}
+.textxontainer>h2 {
+  font-size: 20px;
+  padding-bottom: 36px;
+}
+}
