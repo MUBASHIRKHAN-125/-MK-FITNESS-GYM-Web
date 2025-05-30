@@ -16,7 +16,7 @@ header::before {
   inset: 0;
   width: 100%;
   height: 100%;
-  background: url("images/manhome1.jpg") center / cover no-repeat fixed;
+  background: url("images/11.jpg") center / cover no-repeat fixed;
   z-index: -1;
 }
 
@@ -24,7 +24,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 0px;
+  padding: 40px 0px;
 }
 
 .logo img {
@@ -80,7 +80,7 @@ nav a:hover,
 }
 
 .iconall i:hover {
-  transform: scale(1.103);
+  transform: scale(1.03);
   cursor: pointer;
   background-color: white;
   color: rgb(255, 38, 0);
@@ -88,7 +88,8 @@ nav a:hover,
 }
 
 .sec1 {
-  min-height: 74vh;
+  position: relative;
+  min-height: 70vh;
   display: flex;
 }
 
@@ -99,7 +100,6 @@ nav a:hover,
   align-items: flex-end;
   row-gap: 64px;
   width: 100%;
-  flex: 1;
   padding: 0px 80px 0px 0px;
 }
 
@@ -111,17 +111,19 @@ nav a:hover,
   background: transparent;
   cursor: pointer;
   color: rgb(240, 78, 3);
+  box-shadow: 1px 1px 10px rgb(155, 153, 152);
   transition: all 0.3s 0.1s ease-in-out;
+}
+
+.button button:hover {
+  transform: scale(1.039);
 }
 
 .button {
   padding-right: 30px;
 }
 
-.button button:hover {
-  box-shadow: 1px 1px 10px rgb(155, 153, 152);
-  transform: scale(1.039);
-}
+
 
 .textcontainer>h1>strong {
   color: #f36100;
@@ -232,6 +234,10 @@ p {
 }
 
 @media (max-width: 768px) {
+  .logo img {
+    padding: 0px;
+  }
+
   .items>h4 {
     font-size: 13px;
   }
@@ -262,31 +268,94 @@ p {
   .logo img {
     width: 185px;
   }
+
+  .maincontainer {
+    row-gap: 30px;
+  }
 }
 
 @media (max-width: 430px) {
   nav ul {
     column-gap: 19px;
   }
+
   .cardcontainer {
     display: flex;
     justify-content: center;
     align-items: center !important;
     flex-direction: column;
     row-gap: 50px;
-}
-    .items{
-      width: 100% !important;
-    }
-    .items>h4 {
-      font-size: 22px;
   }
+
+  .items {
+    width: 100% !important;
+  }
+
+  .items>h4 {
+    font-size: 22px;
+  }
+
   .items>p {
-  width: 67%;
-  font-size: 15px;
+    width: 67%;
+    font-size: 15px;
+  }
+
+  .textxontainer>h2 {
+    font-size: 20px;
+    padding-bottom: 36px;
+  }
+
+  .maincontainer {
+    padding: 0px 10px;
+  }
+
+  header::before {
+    background: url("images/13.jpg") center / cover no-repeat scroll;
+  }
+
+  .sec1 {
+    min-height: 80vh;
+  }
 }
-.textxontainer>h2 {
-  font-size: 20px;
-  padding-bottom: 36px;
+
+@media (max-width: 380px) {
+  nav ul {
+    column-gap: 14px;
+  }
+
+  nav ul li a {
+    font-size: 1rem;
+  }
+
+  .logo img {
+    width: 160px;
+  }
 }
+
+@media (max-width:320px) {
+  nav ul {
+    column-gap: 8px;
+  }
+
+  nav ul li a {
+    font-size: 0.9rem;
+  }
+
+  .maincontainer {
+    padding: 0px 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .button {
+    padding-right: 0px;
+  }
+
+  .button button {
+    padding: 10px 60px;
+  }
+    .sec1 {
+    min-height: 90vh;
+  }
 }
